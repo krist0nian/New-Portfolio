@@ -21,7 +21,7 @@
                 <li class="nav__link">Skills</a></li>
             <a href="#projects" class="link__hover-effect">
                 <li class="nav__link">Projects</a></li>
-            <a href="#projects" class="link__hover-effect">
+            <a href="mailto:krist0nian@yahoo.com" class="link__hover-effect">
                 <li class="nav__link">Contact</a></li>
         </div>
         <div class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></div>
@@ -30,16 +30,16 @@
 <main>
     <section id="hero">
         <div class="container">
-            <div class="row">
+            <div class="hero__row">
                 <button class="hero__title"><span class="blue">Frontend Developer</span></button><i class="fa-solid fa-code"></i>
                 <h1 class="hero__intro">Christian <span class="blue">Cruz</span></h1>
-                <h2 class="hero__subtitle">Frontend Developer</h2>
+                <h2 class="hero__subtitle"><span class="blue">Frontend</span> Developer</h2>
                 <p class="hero__para">I develop modern, responsive, and scalable web applications, delivering high‑quality digital solutions that bring ideas to life on the web.</p>
-            <button class="btn">View My Work</button><button class="btn">Contact Me</button>
+            <a href="#projects"><button class="btn">View My Work</button></a><button class="btn">Contact Me</button>
                 <div class="social__links">
                 <a href="https://github.com/dashboard" target="_blank" class="social__link">
                     <i class="fa-brands fa-github"></a></i>  
-                <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank"class="social__link">
+                <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="social__link">
                     <i class="fa-brands fa-linkedin-in"></a></i>
                 <a href="./assets/Example Resume.pdf" target="_blank" class="social__link">
                     <i class="fa-regular fa-file"></a></i>
@@ -51,7 +51,7 @@
     </section>
 
     <section id="about">
-        <div class="container">
+                <div class="container">
             <div class="info__container">
                 <div class="info__container--row">
                     <i class="fa-solid fa-user"></i>
@@ -88,10 +88,86 @@
 
     <section id="skills">
         <div class="container">
+            <div class="skills__row">
+                <h1 class="skills__title"><span class="blue">My Skills</span></h1>
+                    <h2 class="technology__title">My Technology Stack</h2>
+                    <div class="language__list">
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/HTML5logo.png" class="language__img">
+                            </figure><span class="language__name">HTML</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/CSS.png" class="language__img2">
+                            </figure><span class="language__name">CSS</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/javascriptlogo.png" class="language__img3">
+                            </figure><span class="language__name">Javascript</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/react-logo.png" class="language__img4">
+                            </figure><span class="language__name">React</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/firebase.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                    </div>
+            </div>
+        </div>
+    </section>
 
+    <section id="projects">
+        <div class="container">
+            <div class="projects__container">
+                <div class="project__header">
+                    <h1 class="project__title"><span class="blue">My Projects</span></h1><button class="projects__btn">View All Projects</button></div>
+                    <h2 class="feature__project--title">Featured Projects</h2>
+                    
+                <div class="project__list">
+                    <div class="project__container">
+                        <figure class="project__img--wrapper">
+                        <img src="./assets/netflixclone.png" class="project__img"></figure>
+                        <h2 class="project__name">Netflix Clone Project</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
+                    </div>
+                    <div class="project__container">
+                        <figure class="project__img--wrapper">
+                        <img src="./assets/netflixclone.png" class="project__img"></figure>
+                        <h2 class="project__name">Netflix Clone Project</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
+                    </div>
+                    <div class="project__container">
+                        <figure class="project__img--wrapper">
+                        <img src="./assets/netflixclone.png" class="project__img"></figure>
+                        <h2 class="project__name">Netflix Clone Project</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 </main>
-    
+<footer>
+    <div class="footer__container">
+        <div class="footer__row">
+            <img src="./assets/newcclogo.png" class="nav__logo--img">
+            <div class="footer__links">
+                <a href="https://github.com/dashboard" target="_blank" class="footer__link">Github</a>
+                <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="footer__link">LinkedIn</a>
+                <a href="projects" class="footer__link">Projects</a>
+                <a href="./assets/Example Resume.pdf" target="_blank" class="footer__link">Resume</a>
+                <a href="" class="footer__link">Contact</a>
+            </div>
+                <div class="footer__copyright">Copyright © 2026 Christian Cruz. All rights reserved</div>
+            </div>
+        </div>
+    </div>
+</footer>
 </body>
 </html>

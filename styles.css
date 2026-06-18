@@ -3,9 +3,6 @@
 * {
     font-family: "Roboto";
     color: white;
-}
-
-*   {
     transition: all 300ms ease;
 }
 
@@ -18,6 +15,7 @@ body {
     background-image: url(./assets/abstractbg.jpg);
     background-size: 100% 100%;
     width: auto;
+    margin: 0 auto;
 }
 
 .blue {
@@ -46,11 +44,7 @@ body {
 
 .row {
     width: 100%;
-    max-width: 800px;
     margin: 0 auto;
-    padding-top: 24px;
-    padding-right: 100px;
-    padding-left: 80px;
 }
 
 /* NAV */
@@ -60,13 +54,13 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin: 0 auto;
-    max-width: 1150px;
+    max-width: 1180px;
     height: 100px;
 }
 
 .nav__logo--img {
-    height: 60px;
-    width: 60px;
+    height: 70px;
+    width: 70px;
 }
 
 .nav__link--list {
@@ -145,6 +139,15 @@ li {
     align-items: center;
 }
 
+.hero__row {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    padding-top: 4px;
+    padding-right: 90px;
+    padding-left: 120px;
+}
+
 .hero__intro {
     font-size: 72px;
     margin: 0 auto;
@@ -193,11 +196,11 @@ li {
 }
 
 .profile__pic {
-    height: 400px;
-    width: 400px;
+    height: 450px;
+    width: 450px;
     border-radius: 30px;
-    margin-right: 60px;
-    margin-left: 60px;
+    margin-right: 80px;
+    margin-left: 20px;
 }
 
 /* ABOUT ME */
@@ -210,10 +213,10 @@ li {
 
 .about__summary {
     width: 100%;
-    max-width: 550px;
-    margin-right: 40px;
+    max-width: 800px;
+    margin: 0 auto;
     padding-top: 24px;
-    padding-bottom: 24px;
+    padding-bottom: 8px;
     padding-right: 50px;
     padding-left: 50px;
     border: 2px solid rgb(78, 18, 102);
@@ -233,16 +236,17 @@ li {
     margin-top: 20px;
     margin-bottom: 12px;
     width: 100%;
-    max-width: 600px;
+    max-width: 760px;
 }
 
 .info__container {
     display: flex;
     flex-direction: column;
-    margin-left: 60px;
+    margin-left: 30px;
     margin-right: 42px;
     padding-bottom: 32px;
-    width: 500px;
+    width: 100%;
+    max-width: 400px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 30px;
     background-color: rgb(37, 26, 100);
@@ -250,6 +254,7 @@ li {
 }
 
 .info__container--row {
+    width: 100%;
     padding-left: 30px;
     padding-top: 18px;
     display: flex;
@@ -275,6 +280,224 @@ li {
     color: rgb(206, 201, 201);
     margin-top: 4px;
     line-height: 1px;
+}
+
+/* SKILLS */
+
+.skills__row {
+    width: 100%;
+    max-width: 1060px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px solid rgb(78, 18, 102);
+    border-radius: 30px;
+    background-color: rgb(37, 26, 100);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.skills__title {
+    font-size: 36px;
+}
+
+.technology__title {
+    line-height: 1px;
+    color: rgb(206, 201, 201);
+}
+
+.language__list {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    flex-wrap: wrap;
+    padding-top: 18px;
+}
+
+.language {
+    width: 20%;
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+
+.language__img--wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.language__img {
+    width: 134px;
+    height: 140px;
+}
+
+.language__img2 {
+    width: 122px;
+    height: 126px;
+}
+
+.language__img3 {
+    width: 150px;
+    height: 156px;
+}
+
+.language__img4 {
+    width: 154px;
+    height: 146px;
+}
+
+.language__name {
+    position: absolute;
+    bottom: 0;
+    transform: scale(0);
+    transition: all 300ms;
+    font-size: 20px;
+    opacity: 0;
+}
+
+.language:hover .language__name {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.language:hover .language__img {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language:hover .language__img2 {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language:hover .language__img3 {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language:hover .language__img4 {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+/* PROJECTS */
+
+.projects__container {
+    width: 100%;
+    max-width: 1050px;
+    margin: 0 auto;
+    padding-top: 24px;
+    padding-bottom: 40px;
+    padding-right: 50px;
+    padding-left: 50px;
+    border: 2px solid rgb(78, 18, 102);
+    border-radius: 30px;
+    background-color: rgb(37, 26, 100);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project__header {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__title {
+    font-size: 36px;
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 2px;
+    margin-bottom: 2px;
+}
+
+.feature__project--title {
+    line-height: 1px;
+}
+
+.projects__btn {
+    background-color: rgb(1, 2, 8);
+    font-size: 18px;
+    padding: 8px 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.projects__btn:hover {
+    background-color: rgb(170, 12, 157);
+    cursor: pointer;
+}
+
+.project__list {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1050px;
+    margin: 12px;
+}
+
+.project__container {
+    width: 280px;
+    height: auto;
+    margin-top: 28px;
+    padding: 14px;
+    background-color: rgb(129, 26, 163);
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.project__img--wrapper {
+    margin: 0 auto;
+}
+
+.project__img {
+    height: auto;
+    width: 100%;
+}
+
+.project__name {
+    line-height: 1px;
+}
+
+.project__para {
+    font-size: 16px;
+    color: rgb(206, 201, 201);
+}
+
+
+/* FOOTER */
+
+.footer__container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.footer__links {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 50px;
+    margin: 28px 0;
+}
+
+.footer__link {
+    font-size: 20px;
+}
+
+.footer__copyright {
+    font-size: 16px;
+    color: rgb(206, 201, 201);
 }
 
 

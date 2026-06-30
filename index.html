@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Demo-Practice</title>
+    <title>Christian Cruz | Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/880b336f20.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
@@ -21,7 +21,7 @@
                 <li class="nav__link">Skills</a></li>
             <a href="#projects" class="link__hover-effect">
                 <li class="nav__link">Projects</a></li>
-            <a href="mailto:krist0nian@yahoo.com" class="link__hover-effect">
+            <a href="#contact" class="link__hover-effect">
                 <li class="nav__link">Contact</a></li>
         </div>
         <div class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></div>
@@ -35,19 +35,21 @@
                 <h1 class="hero__intro">Christian <span class="blue">Cruz</span></h1>
                 <h2 class="hero__subtitle"><span class="blue">Frontend</span> Developer</h2>
                 <p class="hero__para">I develop modern, responsive, and scalable web applications, delivering high‑quality digital solutions that bring ideas to life on the web.</p>
-            <a href="#projects"><button class="btn">View My Work</button></a><button class="btn">Contact Me</button>
+            <a href="#projects"><button class="btn">View My Work</button></a><button class="btn">My Resume</button>
                 <div class="social__links">
                 <a href="https://github.com/dashboard" target="_blank" class="social__link">
                     <i class="fa-brands fa-github"></a></i>  
                 <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="social__link">
                     <i class="fa-brands fa-linkedin-in"></a></i>
                 <a href="./assets/Example Resume.pdf" target="_blank" class="social__link">
-                    <i class="fa-regular fa-file"></a></i>
+                    <i class="fa-brands fa-facebook"></a></i>
                 <a href="mailto:krist0nian@yahoo.com" class="social__link">
-                    <i class="fa-regular fa-envelope"></a></i>
+                    <i class="fa-brands fa-instagram"></a></i>
                 </div>
             </div>
-                <img src="./assets/neonbg.jpeg" class="profile__pic">
+                <div class="profile__img--container">
+                    <img src="./assets/neonbg2.jpeg" class="profile__pic">
+                </div>
     </section>
 
     <section id="about">
@@ -132,25 +134,50 @@
                 <div class="project__list">
                     <div class="project__container">
                         <figure class="project__img--wrapper">
-                        <img src="./assets/netflixclone.png" class="project__img"></figure>
-                        <h2 class="project__name">Netflix Clone Project</h2>
+                        <img src="./assets/E-Commerce Library.png" class="project__img"></figure>
+                        <h2 class="project__name">E-Commerce Library</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
+                    </div>
+                    <div class="project__container">
+                        <figure class="project__img--wrapper">
+                        <img src="./assets/Movie Buff Database.png" class="project__img"></figure>
+                        <h2 class="project__name">Movie Buff API Database</h2>
                         <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
                     </div>
                     <div class="project__container">
                         <figure class="project__img--wrapper">
                         <img src="./assets/netflixclone.png" class="project__img"></figure>
-                        <h2 class="project__name">Netflix Clone Project</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
-                    </div>
-                    <div class="project__container">
-                        <figure class="project__img--wrapper">
-                        <img src="./assets/netflixclone.png" class="project__img"></figure>
-                        <h2 class="project__name">Netflix Clone Project</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase</p>
+                        <h2 class="project__name">Netflix Clone</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, and Firebase</p>
                     </div>
                 </div>
             </div>
         </div>
+    </section>
+
+    <section id="contact">
+       <div class="container">
+            <div class="row">
+                <div class="contact__container">
+                    <div class="contact__info--container">
+                        <h1 class="contact__header"><span class="blue">Contact Me</span></h1>
+                            <h2 class="contact__sub-title">Get in Touch</h2>
+                                <p class="contact__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing together!</p>
+                    </div>
+                        <div class="form__container">
+                            <form>
+                                <label>Name:</label><br>
+                                <input type:"text" placeholder="Enter you name"><br><br>
+                                <label>Email:</label><br>
+                                <input type:"email" placeholder="Enter your e-mail"><br><br>
+                                <label>Message:</label><br>
+                                <textarea row="8" cols="25" placeholder="Write your message..."></textarea><br>
+                                <button class="contact__btn">Get in Touch <i class="fa-regular fa-paper-plane"></i></button>
+                            </form>
+                        </div>
+                </div>
+            </div>
+       </div>
     </section>
 </main>
 <footer>
@@ -160,11 +187,11 @@
             <div class="footer__links">
                 <a href="https://github.com/dashboard" target="_blank" class="footer__link">Github</a>
                 <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="footer__link">LinkedIn</a>
-                <a href="projects" class="footer__link">Projects</a>
+                <a href="#projects" class="footer__link">Projects</a>
                 <a href="./assets/Example Resume.pdf" target="_blank" class="footer__link">Resume</a>
                 <a href="" class="footer__link">Contact</a>
             </div>
-                <div class="footer__copyright">Copyright © 2026 Christian Cruz. All rights reserved</div>
+                <div class="footer__copyright">Copyright © 2026 Christian Cruz | Frontend Developer</div>
             </div>
         </div>
     </div>

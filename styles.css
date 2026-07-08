@@ -97,6 +97,19 @@ nav {
     position: relative;
 }
 
+a {
+    text-decoration: none;
+    color: white;
+    transition: opacity 300ms ease;
+    transition: all 300ms ease;
+}
+
+.nav__link:hover {
+    color:rgb(93, 78, 226);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .link__hover-effect:after {
     content: "";
     position: absolute;
@@ -111,16 +124,6 @@ nav {
 .link__hover-effect:hover:after {
     width: 100%;
     left: 0;
-}
-
-a {
-    text-decoration: none;
-    color: lightgray;
-    transition: opacity 300ms ease;
-}
-
-a:hover {
-    color: #5d3eff;
 }
 
 li {
@@ -431,6 +434,8 @@ li {
 .project__header {
     display: flex;
     justify-content: space-between;
+    padding-top: 12px;
+    padding-right: 20px;
 }
 
 .project__title {
@@ -448,6 +453,7 @@ li {
 
 .projects__btn {
     background-color: rgb(1, 2, 8);
+    color: white;
     font-size: 18px;
     padding: 8px 18px;
     border-radius: 10px;
@@ -643,9 +649,15 @@ textarea {
     font-size: 20px;
 }
 
+.footer__link:hover {
+    color: rgb(93, 78, 226);
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
 .footer__copyright {
     font-size: 16px;
-    color: rgb(206, 201, 201);
+    color: white;
 }
 
 

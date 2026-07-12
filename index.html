@@ -26,7 +26,9 @@
         </div>
         <div class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></div>
     </nav>
-
+    <button class="mail__btn click" onclick="toggleModal()">
+        <i class="fa-solid fa-envelope"></i></a>
+    </button>
 <main>
     <section id="hero">
         <div class="container">
@@ -35,23 +37,60 @@
                 <h1 class="hero__intro">Christian <span class="blue">Cruz</span></h1>
                 <h2 class="hero__subtitle"><span class="blue">Frontend</span> Developer</h2>
                 <p class="hero__para">I develop modern, responsive, and scalable web applications, delivering high‑quality digital solutions that bring ideas to life on the web.</p>
-            <a href="#projects"><button class="btn">View My Work</button></a><button class="btn">My Resume</button>
+            <a href="#projects"><button class="btn">View My Work</button></a><button class="btn"><a href="./assets/Exampleresume.pdf" target="_blank">My Resume</button></a>
                 <div class="social__links">
                 <a href="https://github.com/dashboard" target="_blank" class="social__link">
                     <i class="fa-brands fa-github"></a></i>  
                 <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="social__link">
                     <i class="fa-brands fa-linkedin-in"></a></i>
-                <a href="./assets/Example Resume.pdf" target="_blank" class="social__link">
+                <a href="https://www.facebook.com/christian.cruz.7758" target="_blank" class="social__link">
                     <i class="fa-brands fa-facebook"></a></i>
                 <a href="mailto:krist0nian@yahoo.com" class="social__link">
                     <i class="fa-brands fa-instagram"></a></i>
-                <a href="mailto:krist0nian@yahoo.com" class="social__link">
-                    <i class="fa-regular fa-envelope"></a></i>
+                <button onclick="toggleModal()" class="social__link">
+                    <i class="fa-regular fa-envelope"></i></a></button>
                 </div>
             </div>
                 <div class="profile__img--container">
                     <img src="./assets/neonbg2.jpeg" class="profile__pic">
                 </div>
+    
+        <div class="modal">
+        <div class="modal__half modal__about">
+            <h1 class="modal__title">Contact Me</h1>
+            <h1 class="modal__subtitle modal__subtitle--about">Get in Touch!</h1>
+            <p class="modal__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing!.</p>
+            <figure class="contact__img--wrapper">
+                        <img src="./assets/lc-trans.png" class="contact__img">
+                        </figure>
+        </div>
+        <div class="modal__half modal__contact">
+            <h1 class="modal__title--contact">Let's have a Chat!</h1>
+            <form id="contact__form" onsubmit="contact(event)">
+                <div class="form__item">
+                    <label class="form__item--label">Name</label>
+                    <input class="input" name="user_name" type="text" required></input>
+                </div>
+                 <div class="form__item">
+                    <label class="form__item--label">E-mail</label>
+                    <input class="input" name="user_email" type="email" required></input>
+                </div>
+                 <div class="form__item">
+                    <label class="form__item--label">Message</label>
+                    <textarea class="input" name="message" type="text" required></textarea>
+                </div>
+                <button ic="contact__submit" class="form__submit">Send it my way</button>
+            </form>
+        <div class="modal__overlay modal__overlay--loading">
+            <i class="fas fa-spinner"></i>
+        </div>
+        <div class="modal__overlay modal__overlay--success">
+            Thanks for the message! Looking forward to speaking to you soon.
+        </div>
+        </div>
+        <i class="fas fa-times modal__exit click" onclick="toggleModal()"></i>
+        </div>            
+    
     </section>
 
     <section id="about">
@@ -103,22 +142,47 @@
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/CSS.png" class="language__img2">
+                                <img src="./assets/CSS.png" class="language__img">
                             </figure><span class="language__name">CSS</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/javascriptlogo.png" class="language__img3">
+                                <img src="./assets/javascriptlogo.png" class="language__img">
                             </figure><span class="language__name">Javascript</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/react-logo.png" class="language__img4">
+                                <img src="./assets/react-logo.png" class="language__img">
                             </figure><span class="language__name">React</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
                                 <img src="./assets/firebase.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/bootstrap.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/typescript.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/vuejs.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/node-js-logo.png" class="language__img">
+                            </figure><span class="language__name">Firebase</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/tailwindcss.png" class="language__img">
                             </figure><span class="language__name">Firebase</span>
                         </div>
                     </div>
@@ -135,22 +199,22 @@
                     
                 <div class="project__list">
                     <div class="project__container">
-                        <figure class="project__img--wrapper">
-                        <img src="./assets/E-Commerce Library.png" class="project__img"></figure>
-                        <h2 class="project__name">E-Commerce Library</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase.</p>
+                        <figure class="project__img--wrapper"><a href="https://movie-buff-react.vercel.app/" target="_blank">
+                        <img src="./assets/The Movie Buff.png" class="project__img"></figure>
+                        <h2 class="project__name">Movie Buff Database</h2>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase.</p></a>
                     </div>
                     <div class="project__container">
-                        <figure class="project__img--wrapper">
+                        <figure class="project__img--wrapper"><a href="https://clone-9cf3b.web.app/" target="_blank">
                         <img src="./assets/amazonclone.png" class="project__img"></figure>
                         <h2 class="project__name">Amazon Clone</h2>
-                        <p class="project__para">A full stack Amazon clone project built with HTML, CSS, Javascript, React.js, Firebase (Full E-Comm Store).</p>
+                        <p class="project__para">A full stack Amazon clone project built with HTML, CSS, Javascript, React.js, Firebase (Full E-Comm Store).</p></a>
                     </div>
                     <div class="project__container">
-                        <figure class="project__img--wrapper">
+                        <figure class="project__img--wrapper"><a href="https://netflix-clone-kappa-lake-27.vercel.app/" target="_blank">
                         <img src="./assets/netflixclone.png" class="project__img"></figure>
                         <h2 class="project__name">Netflix Clone</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, and Firebase with Login Authentication.</p>
+                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, and Firebase with Login Authentication.</p></a>
                     </div>
                 </div>
             </div>
@@ -170,7 +234,7 @@
                         </figure>
                             </div>
                         <div class="form__container">
-                            <form>
+                            <form id="contact__form" onsubmit="contact(event)">
                                 <label>Name:</label><br>
                                 <input type:"text" placeholder="Enter you name"><br><br>
                                 <label>Email:</label><br>
@@ -194,7 +258,7 @@
                 <a href="https://www.linkedin.com/in/christian-cruz-29535b53/" target="_blank" class="footer__link">LinkedIn</a>
                 <a href="#projects" class="footer__link">Projects</a>
                 <a href="./assets/Example Resume.pdf" target="_blank" class="footer__link">Resume</a>
-                <a href="" class="footer__link">Contact</a>
+                <a href="" class="footer__link">Home</a>
             </div>
                 <div class="footer__copyright">Copyright © 2026 Christian Cruz | Frontend Developer</div>
             </div>

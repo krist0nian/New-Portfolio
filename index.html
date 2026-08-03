@@ -12,23 +12,44 @@
 <body>
     <nav>
         <img src="./assets/newcclogo.png" class="nav__logo--img">
-        <div class="nav__link--list">
-            <a href="#" class="link__hover-effect">
-                <li class="nav__link">Home</a></li>
-            <a href="#about" class="link__hover-effect">
-                <li class="nav__link">About</a></li>
-            <a href="#skills" class="link__hover-effect">
-                <li class="nav__link">Skills</a></li>
-            <a href="#projects" class="link__hover-effect">
-                <li class="nav__link">Projects</a></li>
-            <a href="#contact" class="link__hover-effect">
-                <li class="nav__link">Contact</a></li>
-        </div>
+            <div class="nav__link--list">
+                <a href="#" class="link__hover-effect">
+                    <li class="nav__link">Home</a></li>
+                <a href="#about" class="link__hover-effect">
+                    <li class="nav__link">About</a></li>
+                <a href="#skills" class="link__hover-effect">
+                    <li class="nav__link">Skills</a></li>
+                <a href="#projects" class="link__hover-effect">
+                    <li class="nav__link">Projects</a></li>
+                <a href="#contact" class="link__hover-effect">
+                    <li class="nav__link">Contact</a></li>
+            </div>
+
         <div class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></div>
+      
+        <button class="menu__btn" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
+            <div class="menu__overlay">
+                <div class="menu__close" onclick="closeMenu()"><i class="fa-solid fa-xmark"></i></div>
+                <div class="menu__link--list">
+                    <a href="#" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Home</a></li>
+                    <a href="#about" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">About</a></li>
+                    <a href="#skills" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Skills</a></li>
+                    <a href="#projects" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Projects</a></li>
+                    <a href="#contact" class="link__hover-effect">
+                        <li class="nav__link" onclick="closeMenu()">Contact</a></li>
+                </div>
+            </div>
+        </div>
     </nav>
+    
     <button class="mail__btn click" onclick="toggleModal()">
         <i class="fa-solid fa-envelope"></i></a>
     </button>
+
 <main>
     <section id="hero">
         <div class="container">
@@ -59,7 +80,7 @@
         <div class="modal__half modal__about">
             <h1 class="modal__title">Contact Me</h1>
             <h1 class="modal__subtitle modal__subtitle--about">Get in Touch!</h1>
-            <p class="modal__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing!.</p>
+            <p class="modal__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing!</p>
             <figure class="contact__img--wrapper">
                         <img src="./assets/lc-trans.png" class="contact__img">
                         </figure>
@@ -133,7 +154,7 @@
         <div class="container">
             <div class="skills__row">
                 <h1 class="skills__title"><span class="blue">My Skills</span></h1>
-                    <h2 class="technology__title">My Technology Stack</h2>
+                    <h2 class="technology__title">Tools & Technologies I work with</h2>
                     <div class="language__list">
                         <div class="language">
                             <figure class="language__img--wrapper">
@@ -142,48 +163,48 @@
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/CSS.png" class="language__img">
+                                <img src="./assets/CSS.png" class="language__img2">
                             </figure><span class="language__name">CSS</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/javascriptlogo.png" class="language__img">
+                                <img src="./assets/javascriptlogo.png" class="language__img3">
                             </figure><span class="language__name">Javascript</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/react-logo.png" class="language__img">
+                                <img src="./assets/react-logo.png" class="language__img4">
                             </figure><span class="language__name">React</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/firebase.png" class="language__img">
+                                <img src="./assets/nodejs.png" class="language__img5">
+                            </figure><span class="language__name">Node.js</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/github.png" class="language__img6">
+                            </figure><span class="language__name">Github</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/vercel-logo.png" class="language__img7">
+                            </figure><span class="language__name">Vercel</span>
+                        </div>
+                        <div class="language">
+                            <figure class="language__img--wrapper">
+                                <img src="./assets/firebase.png" class="language__img8">
                             </figure><span class="language__name">Firebase</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/bootstrap.png" class="language__img">
-                            </figure><span class="language__name">Firebase</span>
+                                <img src="./assets/heroku-logo.png" class="language__img9">
+                            </figure><span class="language__name">Heroku</span>
                         </div>
                         <div class="language">
                             <figure class="language__img--wrapper">
-                                <img src="./assets/typescript.png" class="language__img">
-                            </figure><span class="language__name">Firebase</span>
-                        </div>
-                        <div class="language">
-                            <figure class="language__img--wrapper">
-                                <img src="./assets/vuejs.png" class="language__img">
-                            </figure><span class="language__name">Firebase</span>
-                        </div>
-                        <div class="language">
-                            <figure class="language__img--wrapper">
-                                <img src="./assets/node-js-logo.png" class="language__img">
-                            </figure><span class="language__name">Firebase</span>
-                        </div>
-                        <div class="language">
-                            <figure class="language__img--wrapper">
-                                <img src="./assets/tailwindcss.png" class="language__img">
-                            </figure><span class="language__name">Firebase</span>
+                                <img src="./assets/stripe-icon.png" class="language__img10">
+                            </figure><span class="language__name">Stripe</span>
                         </div>
                     </div>
             </div>
@@ -201,14 +222,14 @@
                     <div class="project__container">
                         <figure class="project__img--wrapper"><a href="https://movie-buff-react.vercel.app/" target="_blank">
                         <img src="./assets/The Movie Buff.png" class="project__img"></figure>
-                        <h2 class="project__name">Movie Buff Database</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, Firebase.</p></a>
+                        <h2 class="project__name">Movie Buff</h2>
+                        <p class="project__para">A movie search database website created using HTML, CSS, Javascript and React</p></a>
                     </div>
                     <div class="project__container">
                         <figure class="project__img--wrapper"><a href="https://clone-9cf3b.web.app/" target="_blank">
                         <img src="./assets/amazonclone.png" class="project__img"></figure>
                         <h2 class="project__name">Amazon Clone</h2>
-                        <p class="project__para">A full stack Amazon clone project built with HTML, CSS, Javascript, React.js, Firebase (Full E-Comm Store).</p></a>
+                        <p class="project__para">A full stack Amazon clone project built with HTML, CSS, Javascript, React.js, Firebase & Stripe (Fully Functioning E-Comm Store).</p></a>
                     </div>
                     <div class="project__container">
                         <figure class="project__img--wrapper"><a href="https://netflix-clone-kappa-lake-27.vercel.app/" target="_blank">
@@ -229,7 +250,7 @@
                         <h1 class="contact__header"><span class="blue">Contact Me</span></h1>
                             <h2 class="contact__sub-title">Get in Touch</h2>
                                 <p class="contact__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing!</p>
-                    <figure class="contact__img--wrapper">
+                             <figure class="contact__img--wrapper">
                         <img src="./assets/lc-trans.png" class="contact__img">
                         </figure>
                             </div>

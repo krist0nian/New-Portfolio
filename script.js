@@ -1,3 +1,11 @@
+function openMenu() {
+    document.body.classList.add('menu--open');
+}
+
+function closeMenu () {
+    document.body.classList.remove('menu--open');
+}
+
 function toggleDarkMode() {
     document.querySelector('body').classList.toggle("dark-theme")
     console.log('clicked');

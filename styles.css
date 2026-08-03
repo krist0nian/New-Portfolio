@@ -1372,6 +1372,10 @@ textarea {
     max-width: 580px;
     }
 
+    .projects__container {
+        max-width: 580px;
+    }
+
     .contact__container {
     max-width: 580px;
     }

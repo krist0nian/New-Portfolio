@@ -1117,11 +1117,13 @@ textarea {
     max-width: 800px;
     }
 
-    .skills__title {
+    .skills__title,
+    .project__title {
     font-size: 32px;
     }
 
-    .technology__title {
+    .technology__title,
+    .feature__project--title {
     font-size: 24px;
     }
 
@@ -1151,14 +1153,6 @@ textarea {
     padding-bottom: 60px;
     padding-right: 30px;
     padding-left: 30px;
-    }
-
-    .project__title {
-    font-size: 32px;
-    }
-
-    .feature__project--title {
-    font-size: 24px;
     }
 
     .project__container {
@@ -1499,7 +1493,7 @@ textarea {
     width: 100%;
     max-width:fit-content;
     margin: 0 auto;
-}
+    }
 
     .about__summary {
     max-width: 400px;
@@ -1524,7 +1518,7 @@ textarea {
 
     .project__container {
         max-width: 350px;
-        padding: auto;
+        height: auto;
         width: 100%;
     }   
 
@@ -1568,13 +1562,15 @@ textarea {
     .about__me--title,
     .contact__header,
     .project__title,
-    .skills__title {
-    font-size: 28px;
+    .skills__title,
+    .contact__header {
+        font-size: 28px;
     }
 
     .contact__sub-title,
     .feature__project--title,
-    .technology__title {
+    .technology__title,
+    .contact__sub-title {
         font-size: 20px;
     }
 
@@ -1590,16 +1586,16 @@ textarea {
     margin-right: 24px;
     }
 
-label {
-    font-size: 16px;
-}
+    label {
+        font-size: 16px;
+    }
 
-input {
-    font-size: 16px;
-    height: 28px;
-    max-width: 380px;
-    width: 100%;
-}
+    input {
+        font-size: 16px;
+        height: 28px;
+        max-width: 380px;
+        width: 100%;
+    }
 
 textarea {
     font-size: 16px;
@@ -1625,9 +1621,131 @@ textarea {
     .footer__link {
     font-size: 16px;
     }
-
-
 }
 
+@media (max-width: 480px) {
+    nav {
+    max-width: 360px;
+    }
 
+    .hero__row {
+        width: 100%;
+        max-width: 360px;
+        margin: 0 auto;
+        padding: 10px;
+    }
+
+    .hero__intro {
+    font-size: 42px;
+    }
+
+    .hero__subtitle {
+    font-size: 28px;
+    }
+
+    .hero__para {
+    font-size: 16px;
+    margin-top: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+    max-width: 300px;
+    }
+
+    .btn {
+        font-size: 14px;
+        padding: 6px 8px;
+    }
+
+    .profile__img--container {
+    height: auto;
+    width: 100%;
+    max-width:fit-content;
+    margin-top: 24px;
+    }
+    
+    .about__summary {
+    padding: 30px;
+    }
+
+    .about__summary,
+    .skills__row,
+    .projects__container,
+    .contact__container{
+    max-width: 320px;
+    }
+
+    .about__me--title,
+    .contact__header,
+    .project__title,
+    .skills__title,
+    .contact__header {
+        font-size: 24px;
+    }
+
+    .contact__sub-title,
+    .feature__project--title,
+    .technology__title,
+    .contact__sub-title {
+        font-size: 16px;
+    }
+
+    .projects__btn {
+        font-size: 12px;
+        padding: 4px 6px;
+    }
+
+    .project__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 260px;
+        width: 100%;
+        height: auto;
+    }
+
+    .project__img--wrapper {
+        max-width: 240px;
+        height: auto;
+        width: 100%;
+        padding-left: 16px;
+    }
+
+    .project__name {
+        font-size: 20px;
+        padding-left: 20px;
+    }
+
+    .project__para {
+        font-size: 14px;
+        max-width: 230px;
+        padding-left: 20px;
+    }
+
+     .form__container {
+        width: 300px;
+        margin-right: 24px;
+    }
+
+    .contact__para {
+        font-size: 14px;
+    }
+
+    .contact__btn {
+        font-size: 14px;
+        padding: 6px 8px;
+        margin-top: 20px;
+    }
+
+    .footer__links {
+        gap: 24px;
+        margin: 28px 0;
+    }
+
+    .footer__link {
+        font-size: 14px;
+    }
+    .footer__copyright {
+        font-size: 12px;
+    }
+}
 

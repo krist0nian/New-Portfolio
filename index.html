@@ -7,12 +7,22 @@
     <link rel="stylesheet" href="./styles.css">
     <script src="https://kit.fontawesome.com/880b336f20.js" crossorigin="anonymous"></script>
     <script src="script.js" defer></script>
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
+    </script>
+    <script type="text/javascript">
+        (function(){
+            emailjs.init({
+            publicKey: "qSiVBpC_Qre_9rF7W",
+        });
+    })();
+    </script> 
 
 </head>
 <body>
     <nav>
         <img src="./assets/newcclogo.png" class="nav__logo--img">
-            <div class="nav__link--list">
+            <ul class="nav__link--list">
                 <a href="#" class="link__hover-effect">
                     <li class="nav__link">Home</a></li>
                 <a href="#about" class="link__hover-effect">
@@ -23,9 +33,9 @@
                     <li class="nav__link">Projects</a></li>
                 <a href="#contact" class="link__hover-effect">
                     <li class="nav__link">Contact</a></li>
-            </div>
+            </ul>
+            <li class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></li>
 
-        <div class="toggle__mode" onclick="toggleDarkMode()"><i class="fa-solid fa-circle-half-stroke"></i></div>
       
         <button class="menu__btn" onclick="openMenu()"><i class="fa-solid fa-bars"></i></button>
             <div class="menu__overlay">
@@ -229,13 +239,13 @@
                         <figure class="project__img--wrapper"><a href="https://clone-9cf3b.web.app/" target="_blank">
                         <img src="./assets/amazonclone.png" class="project__img"></figure>
                         <h2 class="project__name">Amazon Clone</h2>
-                        <p class="project__para">A full stack Amazon clone project built with HTML, CSS, Javascript, React.js, Firebase & Stripe (Fully Functioning E-Comm Store).</p></a>
+                        <p class="project__para">A full stack Amazon clone project built with React.js, Firebase & Stripe (Fully Functioning E-Comm Store).</p></a>
                     </div>
                     <div class="project__container">
                         <figure class="project__img--wrapper"><a href="https://netflix-clone-kappa-lake-27.vercel.app/" target="_blank">
                         <img src="./assets/netflixclone.png" class="project__img"></figure>
                         <h2 class="project__name">Netflix Clone</h2>
-                        <p class="project__para">A full stack Netflix clone project built with HTML, CSS, Javascript, React.js, and Firebase with Login Authentication.</p></a>
+                        <p class="project__para">A full stack Netflix clone project built with React.js, and Firebase with Login Authentication.</p></a>
                     </div>
                 </div>
             </div>
@@ -257,7 +267,7 @@
                         <div class="form__container">
                             <form id="contact__form" onsubmit="contact(event)">
                                 <label>Name:</label><br>
-                                <input type:"text" placeholder="Enter you name"><br><br>
+                                <input type:"text" placeholder="Enter your name"><br><br>
                                 <label>Email:</label><br>
                                 <input type:"email" placeholder="Enter your e-mail"><br><br>
                                 <label>Message:</label><br>

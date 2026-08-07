@@ -464,7 +464,7 @@ li {
 
 
 .profile__img--container {
-    height: 450px;
+    height: 420px;
     width: 420px;
     margin-right: 60px;
 }
@@ -472,7 +472,7 @@ li {
 .profile__pic {
     height: auto;
     width: 100%;
-    border-radius: 20px;
+    border-radius: 420px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -592,7 +592,7 @@ li {
 }
 
 .language {
-    width: 20%;
+    width: 16%;
     display: flex;
     position: relative;
     justify-content: center;
@@ -618,8 +618,8 @@ li {
 }
 
 .language__img3 {
-    width: 100px;
-    height: 108px;
+    width: 67px;
+    height: 77px;
 }
 
 .language__img4 {
@@ -655,6 +655,16 @@ li {
 .language__img10 {
     width: 70px;
     height: 76px;
+}
+
+.language__img11 {
+    width: 154px;
+    height: 90px;
+}
+
+.language__img12 {
+    width: 82px;
+    height: 90px;
 }
 
 .language__name {
@@ -732,6 +742,18 @@ li {
 }
 
 .language:hover .language__img10 {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language:hover .language__img11 {
+    filter: brightness(80%);
+    opacity: 0.86;
+    transform: scale(0.9);
+}
+
+.language:hover .language__img12 {
     filter: brightness(80%);
     opacity: 0.86;
     transform: scale(0.9);
@@ -1491,9 +1513,10 @@ textarea {
 
     .profile__img--container {
     height: 360px;
-    width: 100%;
+    width: 90%;
     max-width:fit-content;
     margin: 0 auto;
+    margin-top: 24px;
     }
 
     .about__summary {
@@ -1643,6 +1666,9 @@ textarea {
         max-width: 360px;
         margin: 0 auto;
     }
+    .hero__title {
+        font-size: 18px;
+    }
 
     .hero__intro {
     font-size: 42px;
@@ -1667,9 +1693,10 @@ textarea {
 
     .profile__img--container {
     height: auto;
-    width: 90%;
+    width: 80%;
     max-width:fit-content;
     margin-top: 18px;
+    margin-right: 48px;
     }
 
     .about__summary,

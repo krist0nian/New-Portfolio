@@ -41,7 +41,7 @@ body {
 }
 
 .container {
-    padding: 44px 0;
+    padding: 30px 0;
     display: flex;
     margin: 0 auto;
 }
@@ -1453,6 +1453,7 @@ textarea {
         max-width: 400px;
         width: 100%;
         margin: 0 auto;
+        padding-top: 6px;
     }
 
     .hero__row {
@@ -1627,12 +1628,20 @@ textarea {
     nav {
     max-width: 360px;
     }
+    
+    #hero .container {
+        padding-top: 6px;
+        padding-left: 24px;
+    }
+
+    .container {
+        padding: 20px 0;
+    }
 
     .hero__row {
         width: 100%;
         max-width: 360px;
         margin: 0 auto;
-        padding: 10px;
     }
 
     .hero__intro {
@@ -1658,20 +1667,22 @@ textarea {
 
     .profile__img--container {
     height: auto;
-    width: 100%;
+    width: 90%;
     max-width:fit-content;
-    margin-top: 24px;
-    }
-    
-    .about__summary {
-    padding: 30px;
+    margin-top: 18px;
     }
 
     .about__summary,
     .skills__row,
     .projects__container,
-    .contact__container{
-    max-width: 320px;
+    .contact__container {
+        max-width: 300px;
+        padding: 20px;
+    }
+
+    .projects__container,
+    .contact__container {
+        padding-bottom: 40px;
     }
 
     .about__me--title,
@@ -1722,12 +1733,13 @@ textarea {
     }
 
      .form__container {
-        width: 300px;
+        width: 260px;
         margin-right: 24px;
     }
 
     .contact__para {
         font-size: 14px;
+        max-width: 270px;
     }
 
     .contact__btn {

@@ -608,6 +608,7 @@ li {
     justify-content: center;
     width: 100%;
     flex-wrap: wrap;
+    gap: 2px;
     padding-top: 18px;
 }
 

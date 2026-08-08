@@ -343,11 +343,11 @@ li {
 }
 
 .modal__overlay--success {
-    background-color: #4bb543;
-    font-size: 40px;
-    font-weight: 700;
+    background-color: black;
+    font-size: 24px;
+    font-weight: 600;
     text-align: center;
-    padding: 28px;
+    padding-right: 32px;
 }
 
 .modal__overlay--visible {
@@ -373,7 +373,7 @@ li {
     top: 30px;
     right: 40px;
     color: white;
-    font-size: 24px;
+    font-size: 28px;
     z-index: 100;
 }
 
@@ -472,8 +472,28 @@ li {
 .profile__pic {
     height: auto;
     width: 100%;
+    border: 2px solid #00f6ff;
     border-radius: 420px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow:
+    0 0 10px rgba(0, 246, 255, 0.6),
+    0 0 25px rgba(124, 77, 255, 0.45),
+    0 0 45px rgba(0, 255, 138, 0.35);
+    animation: neonGlow 1.8s ease-in-out infinite alternate;
+}
+
+@keyframes neonGlow{
+  from{
+    box-shadow:
+      0 0 8px  rgba(0, 246, 255, 0.35),
+      0 0 22px rgba(124, 77, 255, 0.28),
+      0 0 40px rgba(0, 255, 138, 0.22);
+  }
+  to{
+    box-shadow:
+      0 0 14px rgba(0, 246, 255, 0.75),
+      0 0 35px rgba(124, 77, 255, 0.55),
+      0 0 70px rgba(0, 255, 138, 0.45);
+  }
 }
 
 /* ABOUT ME */

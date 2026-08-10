@@ -117,8 +117,7 @@ a {
 
 .project__name,
 .project__para {
-    padding-left: 4px;
-    padding-right: 12px;
+    margin-left: 4px;
 }
 
 .footer__container {
@@ -168,7 +167,8 @@ a {
         margin: 0 auto;
         height: auto;
         width: 100%;
-}
+    }
+    
 }
 
 @media (max-width: 768px) {

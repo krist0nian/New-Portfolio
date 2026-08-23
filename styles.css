@@ -33,7 +33,12 @@ body {
 }
 
 .dark-theme .mail__btn {
-    background-color: rgb(37, 26, 100);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    transition: 0.3s;
+}
+
+.dark-theme .mail__btn:hover {
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
 }
 
 .dark-theme * {
@@ -219,7 +224,7 @@ li {
     font-size: 32px;
     border-radius: 50%;
     border: none;
-    background-color: black;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     position: fixed;
     bottom: 32px;
     right: 40px;
@@ -228,7 +233,7 @@ li {
 }
 
 .mail__btn:hover {
-    background-color: rgb(93, 78, 226);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
     cursor: pointer;
     transform: scale(1.05);
 }
@@ -307,7 +312,7 @@ li {
 }
 
 .form__submit {
-    background-color: black;
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: lightgray;
     font-weight: 700;
     width: 100%;
@@ -320,9 +325,8 @@ li {
 }
 
 .form__submit:hover {
-    background-color: rgb(93, 78, 226);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 .modal__overlay {
@@ -428,19 +432,20 @@ li {
 }
 
 .btn {
-    background-color: rgb(1, 2, 8);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
     font-size: 18px;
     padding: 8px 18px;
     margin-top: 20px;
-    border-radius: 10px;
+    border: none;
+    border-radius: 8px;
     margin-right: 14px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
 }
 
 .btn:hover {
-    background-color: rgb(93, 78, 226);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 .social__links {
@@ -819,18 +824,20 @@ li {
 }
 
 .projects__btn {
-    background-color: rgb(1, 2, 8);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
     color: white;
-    font-size: 16px;
-    padding: 8px 12px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 18px;
+    padding: 8px 18px;
+    margin-top: 20px;
+    border: none;
+    border-radius: 8px;
+    margin-right: 14px;
+    transition: 0.3s;
 }
 
 .projects__btn:hover {
-    background-color: rgb(93, 78, 226);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 .project__list {
@@ -986,18 +993,20 @@ textarea {
 }
 
 .contact__btn {
-    background-color: rgb(1, 2, 8);
+    background: linear-gradient(135deg, #6a11cb, #2575fc);
+    color: white;
     font-size: 18px;
     padding: 8px 18px;
     margin-top: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border: none;
+    border-radius: 8px;
+    margin-right: 14px;
+    transition: 0.3s;
 }
 
 .contact__btn:hover {
-    background-color: rgb(93, 78, 226);
+    box-shadow: 0 0 15px rgba(101, 126, 255, 0.7);
     cursor: pointer;
-    transform: scale(1.05);
 }
 
 /* FOOTER */
@@ -1399,9 +1408,9 @@ textarea {
     }
 
     .project__img--wrapper {
-        max-width: 280px;
-        width: 100%;
-        margin-right: 14px;
+    max-width: 280px;
+    width: 100%;
+    margin-right: 14px;
     }
 
     .project__img {

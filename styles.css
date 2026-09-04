@@ -18,6 +18,11 @@ body {
     margin: 0 auto;
 }
 
+img {
+    width: 100%;
+    height: auto;
+}
+
 .blue {
     color: rgb(93, 78, 226);
 }
@@ -46,7 +51,7 @@ body {
 }
 
 .container {
-    padding: 30px 0;
+    padding: 46px 0;
     display: flex;
     margin: 0 auto;
 }
@@ -429,6 +434,7 @@ li {
     margin-bottom: 20px;
     width: 100%;
     max-width: 560px;
+    line-height: 1.5;
 }
 
 .btn {
@@ -515,7 +521,7 @@ li {
     max-width: 700px;
     margin: 0 auto;
     padding-top: 28px;
-    padding-bottom: 8px;
+    padding-bottom: 10px;
     padding-right: 30px;
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
@@ -532,7 +538,8 @@ li {
 .about__me--para {
     font-size: 18px;
     color: rgb(206, 201, 201);
-    margin-top: 20px;
+    line-height: 1.5;
+    margin-top: 10px;
     margin-bottom: 12px;
     width: 100%;
     max-width: 700px;
@@ -554,7 +561,7 @@ li {
 .info__container--row {
     width: 100%;
     padding-left: 20px;
-    padding-top: 18px;
+    padding-top: 10px;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -563,7 +570,7 @@ li {
 .info__details {
     display: flex;
     flex-direction: column;
-    margin-left: 22px;
+    margin-left: 22px; 
 }
 
 .info__title {
@@ -571,12 +578,13 @@ li {
     font-size: 22px;
     color: rgb(93, 78, 226);
     margin-bottom: 2px;
+    line-height: 1.4;
 }
 
 .info__para {
     font-size: 16px;
     color: rgb(206, 201, 201);
-    margin-top: 4px;
+    margin-top: 6px;
     line-height: 1px;
 }
 
@@ -654,7 +662,7 @@ li {
 }
 
 .language__img5 {
-    width: 100px;
+    width: 120px;
     height: 84px;
 }
 
@@ -813,8 +821,9 @@ li {
     font-size: 36px;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
 }
 
 .feature__project--title {
@@ -888,7 +897,8 @@ li {
 
 .project__para {
     font-size: 16px;
-    color: rgb(206, 201, 201)
+    color: rgb(206, 201, 201);
+    line-height: 1.4;
 }
 
 .project__name,
@@ -932,7 +942,7 @@ li {
 .contact__sub-title {
     color: rgb(206, 201, 201);
     margin-top: 2px;
-    margin-bottom: 2px;
+    margin-bottom: 1px;
     padding-left: 12px;
 }
 
@@ -942,6 +952,7 @@ li {
     width: 90%;
     max-width: 350px;
     padding-left: 12px;
+    line-height: 1.4;
 }
 
 .contact__img--wrapper {
@@ -1013,8 +1024,10 @@ textarea {
 
 .footer__container {
     width: 100%;
+    height: 240px;
     display: flex;
     justify-content: center;
+    align-items: center;
     text-align: center;
     margin: 0 auto;
     padding: 40px 0;
@@ -1142,7 +1155,6 @@ textarea {
 
     .about__me--para {
     font-size: 16px;
-    margin-top: 20px;
     margin-bottom: 12px;
     max-width: 600px;
     }
@@ -1604,7 +1616,7 @@ textarea {
 
     .contact__container {
     max-width: 400px;
-    padding-bottom: 28px;
+    padding-bottom: 40px;
     flex-direction: column;
     }
 
@@ -1616,7 +1628,7 @@ textarea {
         max-width: 100%;
         width: 100%;
         margin-bottom: 20px;
-    }
+        }
 
     .about__me--title,
     .contact__header,
@@ -1624,21 +1636,21 @@ textarea {
     .skills__title,
     .contact__header {
         font-size: 28px;
-    }
+        }
 
     .contact__sub-title,
     .feature__project--title,
     .technology__title,
     .contact__sub-title {
         font-size: 20px;
-    }
+        }
 
     .about__me--para,
     .contact__para {
-    font-size: 16px;
-    width: 100%;
-    max-width: 380px;
-    }
+        font-size: 16px;
+        width: 100%;
+        max-width: 380px;
+        }
 
     .form__container {
     width: 360px;
@@ -1654,32 +1666,32 @@ textarea {
         height: 28px;
         max-width: 380px;
         width: 100%;
-    }
+        }
 
-textarea {
-    font-size: 16px;
-    max-width: 380px;
-    width: 100%;
-}
+    textarea {
+        font-size: 16px;
+        max-width: 380px;
+        width: 100%;
+        }
 
-.contact__btn {
-    font-size: 16px;
-    padding: 6px 14px;
-    margin-top: 20px;
-}
+    .contact__btn {
+        font-size: 16px;
+        padding: 6px 14px;
+        margin-top: 20px;
+        }
 
     .footer__links {
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 30px;
-    margin: 28px 0;
-    }
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        gap: 30px;
+        margin: 28px 0;
+        }
 
     .footer__link {
-    font-size: 16px;
-    }
+        font-size: 16px;
+        }
 }
 
 @media (max-width: 480px) {

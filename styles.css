@@ -391,7 +391,11 @@ li {
     margin-right: 18px;
     border: 2px solid rgb(78, 18, 102);
     background-color: rgb(37, 26, 100);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow:
+    0 0 10px rgba(0, 246, 255, 0.6),
+    0 0 25px rgba(124, 77, 255, 0.45),
+    0 0 45px rgba(0, 255, 138, 0.35);
+    animation: neonGlow 1.8s ease-in-out infinite alternate;
 }
 
 .fa-solid {
@@ -1405,33 +1409,33 @@ textarea {
 
     .project__container {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     max-width: 540px;
     width: 100%;
-    height: 180px;
+    height: auto;
     margin-top: 28px;
-    padding-left: 10px;
-    padding-right: 24px;
+    padding: 14px;
+    gap: 10px;
     }
 
     .project__img--wrapper {
-    max-width: 280px;
-    width: 100%;
-    margin-right: 14px;
+        max-width: 280px;
+        width: 100%;
+        margin: auto;
     }
 
     .project__img {
-    max-width: 100%;
-    height: auto;
+        max-width: 100%;
+        height: auto;
     }
 
     .project__para {
-    font-size: 16px;
-    max-width: 250px;
+        font-size: 16px;
+        max-width: 250px;
     }
 
     .contact__container {
-    max-width: 640px;
+        max-width: 640px;
     }
 
 }
@@ -1445,6 +1449,9 @@ textarea {
     font-size: 18px;
     }
 
+    .hero__title {
+    font-size: 18px;
+    }
 
     .hero__row {
     max-width: 350px;
@@ -1582,14 +1589,17 @@ textarea {
         width: 100%;
     }
 
-    .project__container {
-        max-width: 350px;
-        height: auto;
+     .project__container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        max-width: 290px;
         width: 100%;
-    }   
+        height: auto;
+    }  
 
     .project__img--wrapper {
-        max-width: 180px;
+        max-width: 260px;
         height: auto;
         width: 100%;
         margin-right: 14px;
@@ -1601,7 +1611,7 @@ textarea {
 
     .project__para {
         font-size: 14px;
-        max-width: 200px;
+        max-width: 250px;
     }
 
     .projects__btn {
@@ -1754,6 +1764,10 @@ textarea {
         padding-bottom: 40px;
     }
 
+    .project__container {
+        max-width: 240px;
+    }
+
     .about__me--title,
     .contact__header,
     .project__title,
@@ -1774,31 +1788,19 @@ textarea {
         padding: 4px 6px;
     }
 
-    .project__container {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        max-width: 260px;
-        width: 100%;
-        height: auto;
-    }
-
     .project__img--wrapper {
         max-width: 240px;
         height: auto;
         width: 100%;
-        padding-left: 16px;
     }
 
     .project__name {
         font-size: 20px;
-        padding-left: 20px;
     }
 
     .project__para {
         font-size: 14px;
         max-width: 230px;
-        padding-left: 20px;
     }
 
      .form__container {

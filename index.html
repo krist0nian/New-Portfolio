@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Christian Cruz | Portfolio</title>
     <link rel="stylesheet" href="./styles.css">
-    <script src="https://kit.fontawesome.com/880b336f20.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css">
     <script src="script.js" defer></script>
     <script type="text/javascript"
         src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js">
@@ -24,10 +24,10 @@
     <nav>
         <img src="./assets/newcclogo.png" class="nav__logo--img">
             <ul class="nav__link--list">
-                <a href="./index.html" class="link__hover-effect">
-                    <li class="nav__link">Home</a></li>
                 <a href="#about" class="link__hover-effect">
                     <li class="nav__link">About</a></li>
+                <a href="#services" class="link__hover-effect">
+                    <li class="nav__link">Services</a></li>
                 <a href="#skills" class="link__hover-effect">
                     <li class="nav__link">Skills</a></li>
                 <a href="#projects" class="link__hover-effect">
@@ -65,9 +65,9 @@
     <section id="hero">
         <div class="container">
             <div class="hero__row">
-                <button class="hero__title"><span class="blue">Frontend Developer</span></button><i class="fa-solid fa-code"></i>
-                <h1 class="hero__intro">Christian <span class="blue">Cruz</span></h1>
-                <h2 class="hero__subtitle"><span class="blue">Frontend</span> Developer</h2>
+                <button class="hero__title"><span>Frontend Developer</span></button><i class="fa-solid fa-code"></i>
+                <h1 class="hero__intro">Christian <span>Cruz</span></h1>
+                <h2 class="hero__subtitle"><span>Frontend</span> Developer</h2>
                 <p class="hero__para">I develop modern, responsive, and scalable web applications, delivering high‑quality digital solutions that bring ideas to life on the web.</p>
             <a href="#projects"><button class="btn">View My Work</button></a><button class="btn"><a href="./assets/Resume.pdf" target="_blank">My Resume</button></a>
                 <div class="social__links">
@@ -155,8 +155,50 @@
             </div>
             
             <div class="about__summary">
-                <h1 class="about__me--title"><span class="blue">About Me</span></h1>
+                <h1 class="about__me--title"><span>About Me</span></h1>
                 <p class="about__me--para">I’m Christian Cruz, a dedicated Frontend Developer committed to creating thoughtful, visually compelling, and highly functional digital experiences. I’m driven by a genuine passion for transforming ideas into intuitive, user‑friendly web applications that not only look beautiful but also solve meaningful, real‑world problems. <br><p class="about__me--para">With a strong focus on clean design, accessibility, and modern development practices, I approach every project with curiosity, precision, and a desire to build interfaces that make technology feel effortless for the people who use it.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <div class="services__row">
+                <h1 class="services__title"><span>My Services</span></h1>
+                <h2 class="services__subtitle">What I Do</h2>
+                    <div class="service__row">
+                    
+                        <div class="service">
+                            <i class="fa-solid fa-code"></i>
+                            <h3 class="service__title"><span>CLEAN & SCALABLE CODE</span></h3>
+                            <p class="service__para">Build well-structured and maintainable code that grows smoothly as projects expand.</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-display"></i>
+                            <h3 class="service__title"><span>RESPONSIVE <br>WEB DESIGN</span></h3>
+                            <p class="service__para">Create interfaces that look sharp and function flawlessly across all mobile devices.</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-window-maximize"></i>
+                            <h3 class="service__title"><span>LANDING <br>PAGES</span></h3>
+                            <p class="service__para"> Craft focused, conversion‑driven pages that highlight key offers and drive action.</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-arrows-rotate"></i>
+                            <h3 class="service__title"><span>WEBSITE REDESIGN</span></h3>
+                            <p class="service__para">Transform outdated sites into modern, polished, high‑performing experiences.</p>
+                        </div>
+                        <div class="service">
+                            <i class="fa-solid fa-cart-shopping"></i>
+                            <h3 class="service__title"><span>E-COMMERCE SOLUTIONS</span></h3>
+                            <p class="service__para">Develop secure, user‑friendly online stores optimized for sales and seamless shopping.</p>
+                        </div>
+                        <div class="service">
+                            <img src="./assets/react-icon.png" class="service__icon">
+                            <h3 class="service__title"><span>REACT.JS DEVELOPMENT</span></h3>
+                            <p class="service__para">Build fast, dynamic, component‑driven interfaces using modern React best practices.</p>
+                        </div>
+                    </div>
             </div>
         </div>
     </section>
@@ -164,7 +206,7 @@
     <section id="skills">
         <div class="container">
             <div class="skills__row">
-                <h1 class="skills__title"><span class="blue">My Skills</span></h1>
+                <h1 class="skills__title"><span>My Skills</span></h1>
                     <h2 class="technology__title">Tools & Technology stack I work with</h2>
                     <div class="language__list">
                         <div class="language">
@@ -236,7 +278,7 @@
         <div class="container">
             <div class="projects__container">
                 <div class="project__header">
-                    <h1 class="project__title"><span class="blue">My Projects</span></h1><button class="projects__btn"><a href="./projects.html">View All Projects</a></button></div>
+                    <h1 class="project__title"><span>My Projects</span></h1><button class="projects__btn"><a href="./projects.html">All Projects</a></button></div>
                     <h2 class="feature__project--title">Featured Projects</h2>
                     
                 <div class="project__list">
@@ -268,7 +310,7 @@
             <div class="row">
                 <div class="contact__container">
                     <div class="contact__info--container">
-                        <h1 class="contact__header"><span class="blue">Contact Me</span></h1>
+                        <h1 class="contact__header"><span>Contact Me</span></h1>
                             <h2 class="contact__sub-title">Get in Touch</h2>
                                 <p class="contact__para">Have a project in mind? Let's work together. I am always open to discussing new projects and opportunities. Let's create something amazing!</p>
                              <figure class="contact__img--wrapper">

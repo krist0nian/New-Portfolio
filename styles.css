@@ -1883,8 +1883,8 @@ textarea {
     }
 
     .service {
-        max-width: 220px;
-        height: 160px;
+        max-width: 230px;
+        height: 180px;
     }
 
     .about__me--title,
@@ -1899,7 +1899,7 @@ textarea {
     .contact__sub-title,
     .feature__project--title,
     .services__subtitle,
-    .service__title,
+    
     .technology__title,
     .contact__sub-title {
         font-size: 16px;
@@ -1920,8 +1920,7 @@ textarea {
         font-size: 20px;
     }
 
-    .project__para,
-    .service__para {
+    .project__para {
         font-size: 14px;
         max-width: 230px;   
     }

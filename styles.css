@@ -531,7 +531,7 @@ li {
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -559,7 +559,7 @@ li {
     max-width: 350px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100. 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -606,7 +606,7 @@ li {
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
 }
 
@@ -645,7 +645,7 @@ li {
     padding-right: 10px;
     padding-top: 20px;
     padding-bottom: 20px;
-    background-color: rgb(74, 15, 102);
+    background-color: rgb(74, 15, 102, 0.2);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -686,7 +686,7 @@ li {
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -893,7 +893,7 @@ li {
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
@@ -953,7 +953,7 @@ li {
     height: 320px;
     margin-top: 28px;
     padding: 12px;
-    background-color: rgb(74, 15, 102);
+    background-color: rgb(74, 15, 102, 0.2);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
@@ -1007,7 +1007,7 @@ li {
     padding-left: 30px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
-    background-color: rgb(37, 26, 100);
+    background-color: rgb(37, 26, 100, 0.3);
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
     display: flex;
 }

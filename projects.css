@@ -85,7 +85,7 @@ a {
     width: 30%;
     position: relative;
     padding: 14px;
-    background-color: rgb(74, 15, 102);
+    background-color: rgb(74, 15, 102, 0.3);
     border: 1px solid black;
     border-radius: 10px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);

@@ -601,8 +601,8 @@ li {
     margin: 0 auto;
     padding-top: 10px;
     padding-bottom: 40px;
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 24px;
+    padding-left: 24px;
     border: 2px solid rgb(78, 18, 102);
     border-radius: 10px;
     background-color: rgb(37, 26, 100, 0.3);
@@ -627,12 +627,12 @@ li {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
-    gap: 20px;
+    gap: 14px;
     margin: 0 auto;
 }
 
 .service {
-    max-width: 140px;
+    max-width: 146px;
     width: 100%;
     height: 220px;
     display: flex;
@@ -643,7 +643,7 @@ li {
     padding-left: 10px;
     padding-right: 10px;
     padding-top: 20px;
-    padding-bottom: 20px;
+    padding-bottom: 30px;
     background-color: rgb(74, 15, 102, 0.2);
     border: 1px solid black;
     border-radius: 10px;
@@ -661,13 +661,13 @@ li {
 .service__title {
     margin-bottom: 10px;
     width: 140px;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 .service__para {
     color: rgb(206, 201, 201);
     line-height: 1.3;
-    font-size: 14px;
+    font-size: 16px;
     margin: 0 auto;
     width: 100%;
 }
@@ -1280,7 +1280,7 @@ textarea {
     }
 
     .service {
-        max-width: 210px;
+        max-width: 220px;
     }
 
     .service__row {
@@ -1293,6 +1293,7 @@ textarea {
 
     .service__para {
         font-size: 16px;
+        max-width: 180px;
     }
 
     .language__list {
